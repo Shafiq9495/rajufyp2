@@ -1,5 +1,4 @@
 from sklearn.ensemble import RandomForestClassifier
-from boruta import BorutaPy
 from sklearn.feature_selection import RFECV
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
