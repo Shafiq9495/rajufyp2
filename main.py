@@ -58,15 +58,20 @@ st.pyplot(fig)
 #sns.set(rc={'figure.figsize':(22.7,40.27)})
 #st.pyplot(fig)
 
-fig = plt.figure()
+#fig = plt.figure()
+#st.write("Product Sub_Category With Sales")
+#q11 = df[["Sub_Category","Sales"]]
+#q11 = q11.groupby(["Sub_Category"]).agg({"Sales": "sum"}).sort_values('Sales', ascending=False)
+#st.write(q11)
+#q11['Sub_Category']=q11.index 
+#ax = sns.barplot(x="Sub_Category", y="Sales", data=q11)
+#sns.set(rc={'figure.figsize':(22.7,20.27)})
+#st.pyplot(fig)
+
 st.write("Product Sub_Category With Sales")
 q11 = df[["Sub_Category","Sales"]]
 q11 = q11.groupby(["Sub_Category"]).agg({"Sales": "sum"}).sort_values('Sales', ascending=False)
 st.write(q11)
-q11['Sub_Category']=q11.index 
-ax = sns.barplot(x="Sub_Category", y="Sales", data=q11)
-sns.set(rc={'figure.figsize':(22.7,20.27)})
-st.pyplot(fig)
 
 st.write("Product With Quantity")
 q10 = df[["Product","Quantity"]]
